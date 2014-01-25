@@ -200,6 +200,8 @@ var/
 sdist/
 develop-eggs/
 .installed.cfg
+emailVariables.py
+emailVariables.pyc
 
 # Installer logs
 pip-log.txt

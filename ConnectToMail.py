@@ -4,10 +4,15 @@ Created on Tue Jan 21 08:08:42 2014
 
 @author: wgillis
 """
+
+#this stores my user name and password
+#to use this script, just substitute any place where ev is
+#used with the proper string, i.e. directory, user name, password
+#email address
 import emailVariables as ev
 import imaplib, email, os
 
-FROM = 'danb@cns.bu.edu'
+FROM = ev.FROM
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
 mail.login(ev.BU_USER_NAME, ev.PASSWORD)
 mail.select('INBOX')
